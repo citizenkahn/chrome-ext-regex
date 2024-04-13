@@ -1,0 +1,29 @@
+In your `popup.html` file, you might want to create a simple form that allows the user to enter a regex pattern. When the form is submitted, it sends a message to the `background.js` script to perform the replacement.
+
+Here's a simple example of how you might structure your `popup.html` file:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regex Search</title>
+    <style>
+        body {
+          width: 300px;
+          padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Regex Search</h1>
+<form id="regex-form">
+    <label for="regex-input">Enter regex pattern:</label>
+    <input type="text" id="regex-input">
+    <button type="submit">Search</button>
+</form>
+<script src="popup.js"></script>
+</body>
+</html>
+```
+
+In this example, when the form is submitted, it will trigger the script in `popup.js` (which you'll need to create) to send a message to the `background.js` script. The message will contain the regex pattern entered by the user.
