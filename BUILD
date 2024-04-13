@@ -3,7 +3,7 @@ load("@rules_pkg//:pkg.bzl", "pkg_zip")
 genrule(
     name = "version",
     outs = ["version.txt"],
-    cmd = "git describe --tags --abbrev=0 > $@",
+    cmd = "mkdir -p $(@D); git describe --tags --abbrev=0 > $@",
 )
 
 genrule(
