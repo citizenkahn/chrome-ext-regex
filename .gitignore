@@ -1,0 +1,44 @@
+# Node files
+node_modules/
+npm-debug.log
+
+# Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Java files
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+# C files
+*.o
+*.ko
+*.obj
+*.elf
+*.gch
+*.d
+*.d.*
+
+# IDE files
+.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build files
+bazel-*
